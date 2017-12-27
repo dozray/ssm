@@ -1,0 +1,28 @@
+
+pyc
+c:\Python27\python.exe -c "import compileall;compileall.compile_dir('c:/install/f/')"
+
+
+pyinstaller 2.x
+
+将upx解压到pyInstall目录下，执行如下命令
+
+python PyInstaller.py -a --clean -w --upx-dir=c:\PyInstaller  --icon=c:\cs\Airport.ico c:\cs\CardService.py
+
+-a		:	只使用ascii的源码
+-w		:	表示不显示窗口，默认显示一个console窗口
+--upx-dir	:	upx的目录，有关upx的信息请google之，
+--clean		:	清除pyInstall的cache及之前生成的文件
+--icon		:	指定生成的可执行程序的图标
+
+最后一个参数为要生成可执行文件的py源文件
+
+
+xcopy CardService\dist\CardService c:\cs\setup\pkg\CardService /e/r/y/f
+
+web resource:
+ime
+http://blog.csdn.net/fengbangyue/article/details/7346333
+
+在web页面中,我们使用input 的type为password 的<input type="password/>标记,此标记自动转为英文状态
+只需要在提交到服务器之前将password 统一转换为小写或者大写就行。
