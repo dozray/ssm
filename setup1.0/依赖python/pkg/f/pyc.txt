@@ -1,0 +1,2 @@
+c:\Python27\python.exe -c "import compileall;compileall.compile_dir('c:/install/f/')"
+

@@ -1,0 +1,3 @@
+@echo off
+echo Starting card service...
+RunHiddenConsole %CD%/python.exe %CD%/CardService.pyc
